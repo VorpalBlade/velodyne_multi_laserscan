@@ -1,0 +1,10 @@
+<library path="libvelodyne_multi_laserscan">
+  <class name="velodyne_multi_laserscan/MultiLaserScanNodelet"
+         type="velodyne_multi_laserscan::MultiLaserScanNodelet"
+         base_class_type="nodelet::Nodelet">
+    <description>
+      Extract and merge multiple rings from a Velodyne PointCloud2 and publish
+      as a LaserScan.
+    </description>
+  </class>
+</library>

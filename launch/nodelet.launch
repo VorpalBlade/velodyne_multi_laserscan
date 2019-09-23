@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!-- Launch Velodyne nodelets -->
+<launch>
+  <arg name="nodelet_manager" default="velodyne_nodelet_manager" />
+  <arg name="min_z" default="0.0" />
+  <arg name="max_z" default="2.0" />
+  <arg name="resolution" default="0.007" />
+
+  <node pkg="nodelet" type="nodelet" name="mutli_scan_nodelet"
+        args="load velodyne_multi_laserscan/MultiLaserScanNodelet $(arg nodelet_manager)">
+    <param name="min_z" value="$(arg min_z)" />
+    <param name="max_z" value="$(arg max_z)" />
+    <param name="resolution" value="$(arg resolution)" />
+  </node>
+</launch>
