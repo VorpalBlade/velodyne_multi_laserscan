@@ -29,8 +29,8 @@ generate_dynamic_reconfigure_options(
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-  INCLUDE_DIRS include
-  LIBRARIES velodyne_multi_laserscan
+#  INCLUDE_DIRS include
+  LIBRARIES ${PROJECT_NAME}
   CATKIN_DEPENDS ${${PROJECT_NAME}_CATKIN_DEPS}
 #  DEPENDS system_lib
 )
