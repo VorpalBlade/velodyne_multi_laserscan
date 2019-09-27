@@ -124,7 +124,7 @@ void VelodyneMultiLaserScan::recvCallback(
 }
 
 void VelodyneMultiLaserScan::reconfig(VelodyneMultiLaserScanConfig &config,
-                                      uint32_t level)
+                                      uint32_t)
 {
   cfg_ = config;
 }

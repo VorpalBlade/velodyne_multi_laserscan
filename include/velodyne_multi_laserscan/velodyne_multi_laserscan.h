@@ -43,7 +43,7 @@ private:
 
   VelodyneMultiLaserScanConfig cfg_;
   dynamic_reconfigure::Server<VelodyneMultiLaserScanConfig> srv_;
-  void reconfig(VelodyneMultiLaserScanConfig &config, uint32_t level);
+  void reconfig(VelodyneMultiLaserScanConfig &config, uint32_t);
 
   //! Offsets in PointCloud2 message
   struct Offsets
