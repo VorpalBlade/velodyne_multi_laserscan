@@ -96,13 +96,13 @@ void VelodyneMultiLaserScan::recvCallback(
   scan->ranges.resize(SIZE, INFINITY);
 
   if ((offsets.x == 0) && (offsets.y == 4) && (offsets.z == 8) &&
-      (offsets.i == 16) && (offsets.r == 20)) {
+      (offsets.i == 12) && (offsets.r == 16)) {
     scan->intensities.resize(SIZE);
 
     for (sensor_msgs::PointCloud2ConstIterator<float> it(*msg, "x");
          it != it.end();
          ++it) {
-      CORE_LOGIC(it[0], it[1], it[2], it[4])
+      CORE_LOGIC(it[0], it[1], it[2], it[3])
     }
 
   } else {
