@@ -1,5 +1,11 @@
 # velodyne_multi_laserscan
 
+**NOTE**: I no longer work in the field of robotics, this is not maintained. But
+hopefully the ideas and techniques presented here might be of use to you. Or the
+software itself might even still work!
+
+---
+
 Node that takes multiple rings of the Velodyne scan and flattens it down,
 selecting the closest point in each direction. The result is published as a
 laser scan.
